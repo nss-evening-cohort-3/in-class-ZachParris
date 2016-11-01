@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h1>Index</h1>
+<form method="POST" action="/Basics/Index">
+      @Html.AntiForgeryToken()
+    <input type="text" name="email"/>
+    <input type="password" name="password" />
+    <input type="password" name="passwordconfirmation"/>
+    <input type="submit" value="Submit"/>
+</form>
